@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="icon" href="#"/>
+</head>
+<body>
+    <div class="video-trimmer"></div>
+    <script src="coi-serviceworker.min.js"></script>
+    <script type="module">
+    import VideoTrimmer from "./dist/main.js";
+    const video = new VideoTrimmer('.video-trimmer','http://localhost:3000/api/files');
+    </script>
+</body>
+</html> 
